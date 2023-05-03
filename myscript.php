@@ -1,7 +1,9 @@
 <?php
 $paragraph = $_POST["paragraph"];
+$badword = $_POST["badword"];
 
-$paragraph_censored = str_replace("dolor", "*****", $paragraph)
+$paragraph_censored = str_replace($badword, "***", $paragraph);
+
 ?>
 
 <!DOCTYPE html>

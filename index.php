@@ -13,12 +13,15 @@
 
 <body>
     <h1 class="text-center">PHP Badwords</h1>
-    <h5 class="text-center">La badwords è <span class="bg-danger">'dolor'</span></h5>
     <div class="container my-5">
         <form action="myscript.php" method="post">
             <div class="mb-3">
-              <label for="paragraph" class="form-label">Inserisci paragrafo. Se vuoi puoi inserire un paragrafo di prova che si trova proprio sotto il form ;)</label>
+              <label for="paragraph" class="form-label">Inserisci paragrafo. Se vuoi puoi inserire un paragrafo di prova che si trova proprio sotto il form e usare una parola di esso come badword ;)</label>
               <textarea class="form-control mb-3" name="paragraph" id="paragraph" rows="3"></textarea>
+
+              <label class="mb-3" for="badword">Parola da censurare? Scegli la tua badword</label> <br>
+              <input class="mb-3" type="text" name="badword" id="badword"> <br>
+
               <button type="submit" class="btn btn-primary">Submit</button>
               <button type="reset" class="btn btn-primary">Reset</button>
             </div>
