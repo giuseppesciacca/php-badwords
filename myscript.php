@@ -38,7 +38,10 @@ $paragraph_censored = str_replace("dolor", "***", $paragraph)
 <body>
 
     <h1 class="text-center">Paragrafo censurato. Niente badwords</h1>
-    <p class="container my-5"><?php echo $paragraph_censored ?></p>
+    <div class="container my-5">
+        <p><?php echo $paragraph_censored ?></p>
+        <p>Il paragrafo è lungo <?php echo strlen($paragraph_censored) ?> parole</p>
+    </div>
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
